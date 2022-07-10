@@ -1,0 +1,2 @@
+# simpleCV
+ OpenCV made simple

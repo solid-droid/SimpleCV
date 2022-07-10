@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Hello OpenCV.js (WebAssembly)</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<body>
+<p id='status'>OpenCV.js (WebAssembly) is loading...</p>
+<input type='file' id='fileInput' accept='image/gif, image/jpeg, image/png'/>
+<div>
+    <img id='srcImage'></img>
+    <canvas id='outputCanvas'></canvas>
+</div>
+<script>
+  var Module = {
+    wasmBinaryFile: './opencv_js.wasm',
+    _main: function() {opencvIsReady();}
+  };
+</script>
+<script async src="./opencv.js"></script>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
